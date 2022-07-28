@@ -1,15 +1,17 @@
 import React from 'react'
 import {StatusBar} from 'react-native'
 import {Home} from './src/screens/Home'
-import {gestureHandlerRootHOC} from 'react-native-gesture-handler'
+import {GestureHandlerRootView} from 'react-native-gesture-handler'
 
 const App = () => {
   return (
     <>
-      <StatusBar backgroundColor={'transparent'} translucent barStyle={'light-content'} />
-      <Home />
+      <GestureHandlerRootView style={{flex: 1}}>
+        <StatusBar backgroundColor={'transparent'} translucent barStyle={'light-content'} />
+        <Home />
+      </GestureHandlerRootView>
     </>
   )
 }
 
-export default gestureHandlerRootHOC(App)
+export default App
