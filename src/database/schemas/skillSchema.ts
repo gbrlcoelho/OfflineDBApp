@@ -4,11 +4,11 @@ export const skillSchema = tableSchema({
   name: 'skills',
   columns: [
     {
-      name: 'string',
+      name: 'name',
       type: 'string',
     },
     {
-      name: 'string',
+      name: 'type',
       type: 'string',
     },
   ],
